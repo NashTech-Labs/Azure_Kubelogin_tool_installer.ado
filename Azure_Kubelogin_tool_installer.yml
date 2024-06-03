@@ -1,0 +1,11 @@
+# Kubelogin tool installer v0
+# Helps to install kubelogin.
+
+parameters:
+- name: 'kubeloginVersion'
+  type: string    
+  default: 'latest'
+
+- task: KubeloginInstaller@0
+  inputs:
+    kubeloginVersion: '${{parameters.kubeloginVersion}}'         
