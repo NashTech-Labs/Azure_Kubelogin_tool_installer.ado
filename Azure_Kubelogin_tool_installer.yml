@@ -6,6 +6,7 @@ parameters:
   type: string    
   default: 'latest'
 
+steps:
 - task: KubeloginInstaller@0
   inputs:
     kubeloginVersion: '${{parameters.kubeloginVersion}}'         
